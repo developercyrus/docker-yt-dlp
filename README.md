@@ -9,7 +9,7 @@ sudo docker run --rm -it \
 -- save the output file into the host's /tmp
 sudo docker run --rm -it \
   --name yt-dlp \
-  --volume /tmp:/folder1
+  --volume /tmp:/folder1 \
   developercyrus/yt-dlp \
-  yt-dlp -f 270 --output /folder1/aaVnBxOAgfc.mp4 "https://www.youtube.com/watch?v=aaVnBxOAgfc"
+  yt-dlp -f 270+140 --output /folder1/aaVnBxOAgfc.mp4 "https://www.youtube.com/watch?v=aaVnBxOAgfc"
 ```
